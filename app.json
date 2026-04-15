@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "WordDex",
+    "slug": "kanji-learning-app",
+    "version": "1.1.1",
+    "orientation": "portrait",
+    "icon": "./assets/worddexiconlogo.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/worddexiconlogo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A1628"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bluve01.kanjilearningapp",
+      "orientation": "portrait",
+      "infoPlist": {
+        "UISupportedInterfaceOrientations": [
+          "UIInterfaceOrientationPortrait"
+        ],
+        "UISupportedInterfaceOrientations~ipad": [
+          "UIInterfaceOrientationPortrait"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/worddexiconlogo.png",
+        "backgroundColor": "#0F172A"
+      },
+      "package": "com.bluve01.kanjilearningapp",
+      "permissions": ["INTERNET"],
+      "orientation": "portrait",
+      "screenOrientation": "portrait"
+    },
+    "web": {
+      "favicon": "./assets/worddexiconlogo.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0A1628",
+          "image": "./assets/worddexiconlogo.png",
+          "resizeMode": "contain"
+        }
+      ],
+      "expo-router",
+      "expo-dev-client",
+      "expo-web-browser",
+      "expo-in-app-purchases",
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "PORTRAIT_UP"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "WordDex accesses your photos to create flashcards from images containing text.",
+          "cameraPermission": "WordDex uses your camera to scan text and create flashcards for language learning."
+        }
+      ]
+    ],
+    "scheme": "kanjilearningapp"
+  }
+}
